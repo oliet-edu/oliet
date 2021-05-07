@@ -1,12 +1,184 @@
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?0202c7500db9fe8c3ab30b7441a5697c";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>OLIET</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-hello oliet！！！
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<!-- 定义导航条的部分 -->
+    <!-- navbar-inverse 反色的导航条 -->
+    <!-- navbar-static-top 圆角变为方角 -->
+    <nav class="navbar navbar-default navbar-static-top lt-header">
+        <!-- container容器，左右留有余地 -->
+        <div class="container">
+            <div class="navbar-header">
+                <img src="images/logo-l.png" class="logo">
+                <!--
+                    在浏览器的宽度很小时，buttion出现。
+                    图案为方框内有三道杠。
+                    data-target="#TaoistsNavBar" 与 div id="TaoistsNavBar" 相对应
+                    -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#TaoistsNavBar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!--
+                        icon-bar有一个，那个图标就有一道杠。
+                        这里有三个，那么图标就有三道杠
+                      -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="TaoistsNavBar">
+                <ul class="nav navbar-nav nav-text">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="course.html">课程体系</a></li>
+                    <li><a href="advantage.html">教学优势</a></li>
+                    <li><a href="#">教学环境</a></li>
+                    <li><a href="#">会员活动</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="haibao">
+    	<div class="container-fluid">
+    		<img src="images/haibao.png" class="img-responsive">
+    	</div>
+    </div>
+	<div class="youshi">
+		<div class="container">
+			<div class="row" style="margin-bottom: 60px;">
+				<div class="col-md-6 col-md-offset-3 text-center">
+                    <h2 style="color: #545454;">
+                        品牌优势
+                    </h2>
+                    <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="15%" color="#6f5499"
+                       size="3" />
+                    <p style="font-size:16px;color: grey;">
+                        更适合中国孩子的、专业的、高端英语教育品牌
+                    </p>
+                </div>
+			</div>
+			<div class="row">
+					<div class="col-md-3 animate-box text-center">
+						<div class="card face-cursor">
+							<h3>兴趣</h3>
+							<p>多学科场景提升学习兴趣</p>
+							<img src="images/xingqu.png" class="img-responsive" style="height:180px;">
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="card face-cursor">
+							<h3>知识</h3>
+							<p>丰富学科知识及常识性知识积累</p>
+							<img src="images/zhishi.png" class="img-responsive" style="height:180px;">
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="card face-cursor">
+							<h3>应用性</h3>
+							<p>学科场景下更利于口语输出</p>
+							<img src="images/yingyong.png" class="img-responsive" style="height:180px;">
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="card face-cursor">
+							<h3>语言思维</h3>
+							<p>母语语言思维、跨学科语言思维能力</p>
+							<img src="images/siwei.png" class="img-responsive" style="height:180px;">
+						</div>
+					</div>
+				</div>
+		
+		</div>
+	</div>
+	
+	<div class="tixi">
+		<div class="container">
+			<div class="row" style="margin-bottom: 60px;">
+				<div class="col-md-6 col-md-offset-3 text-center">
+                    <h2 style="color: #545454;">
+                        课程体系
+                    </h2>
+                    <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="15%" color="#6f5499"
+                       size="3" />
+                    <p style="font-size:16px;color: grey;">
+                        根据多元智能理论定制课程
+                    </p>
+                </div>
+			</div>
+			<div class="row" style="margin-bottom: 60px;">
+				<div class="col-md-6 col-md-offset-1 text-center">
+					<img src="images/tixi.png" class="img-responsive" style="height:550px;">
+				</div>
+				<div class="col-md-4 text-center" style="font-size:18px;color: grey;padding-top:8em;text-indent:2em;">
+					<p>多元智能理论是由美国哈佛大学教育研究院的心理发展学家霍华德 加德纳(Howard Gardner)在1983年提出。</p>
+					<p>传统上，学校一直只强调学生在逻辑─数学和语文（主要是读和写）两方面的发展。但这并不是人类智能的全部。不同的人会有不同的智能组合，例如：建筑师及雕塑家的空间感（空间智能）比较强、运动员和芭蕾舞演员的体力（肢体运作智能）较强、公关的人际智能较强、作家的内省智能较强等。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+	    <div class="container">
+	        <hr style="filter: alpha(opacity=100,finishopacity=0,style=2);margin-bottom: 40px" width="100%" color="#6f5499" size="3" />  
+	        <div class="row">
+	            
+	            <div class="col-md-2 col-md-offset-3 col-xs-6 text-center">
+	                <h5 style="color: #545454">服务介绍</h5>
+                    <p class="foot-text"><a href="course.html">课程体系</a></p>
+                    <p class="foot-text"><a href="advantage.html">教学优势</a></p>
+                    <p class="foot-text"><a href="#">教学环境</a></p>
+                    <p class="foot-text"><a href="#">会员活动</a></p>
+                    <p class="foot-text"><a href="#">人才招聘</a></p>
+	            </div>
+	            <div class="col-md-2 col-xs-6 text-center">
+	                <h5 style="color: #545454">联系我们</h5>
+	                <p class="foot-text">010-8343 5000</p>
+	                <p class="foot-text">Joezhou1108@163.com</p>
+	            </div>
+	            <!-- <div class="col-md-3 col-xs-12 text-center">
+	                <h4>地图导航</h4>
+	                <img src="images/ditu.png" class="img-responsive">
+	            </div> -->
+	            <div class="col-md-2 col-xs-12 text-center">
+	                <h5>关注我们</h5>
+	                <img src="images/erweima.png" class="img-responsive">
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?0202c7500db9fe8c3ab30b7441a5697c";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+  </body>
+</html>
